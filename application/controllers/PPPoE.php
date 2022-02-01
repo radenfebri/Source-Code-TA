@@ -31,6 +31,8 @@ class PPPoE extends CI_Controller {
 		$this->load->view('template/main');
 		$this->load->view('template/js');
 
+		// var_dump($secret);
+
 		}else{
 			echo "<font color='#ff0000'><h1>Connection Failed!!</h1></font>";
 			redirect('auth');

@@ -122,6 +122,7 @@
 											<th>Service</th>
 											<th>Local-Address</th>
 											<th>Remote-Address</th>
+											<th>Status</th>
 											<th>Comment</th>
 											<th style="width: 10%">Action</th>
 										</tr>
@@ -134,6 +135,7 @@
 											<th>Service</th>
 											<th>Local-Address</th>
 											<th>Remote-Address</th>
+											<th>Status</th>
 											<th>Comment</th>
 											<th>Action</th>
 										</tr>
@@ -148,6 +150,15 @@
 											<td><?= $data['service']; ?></td>	
 											<td><?= $data['local-address']; ?></td>	
 											<td><?= $data['remote-address']; ?></td>
+											<td>
+												<?php 
+													if ($data['disabled'] == "true" ) {
+														echo "Disable";
+													} else {
+														echo "Enable";
+													}
+												?>
+											</td>
 											<td><?= $data['comment']; ?></td>
 											<td>
 												<div class="form-button-action">
