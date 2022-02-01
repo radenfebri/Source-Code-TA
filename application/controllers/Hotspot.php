@@ -27,6 +27,8 @@ class Hotspot extends CI_Controller
 				'profile' => $profile,
 			];
 
+			// var_dump($hotspotuser);
+
 			$menu['menu'] = 'Hotspot';
 			$data['title'] = 'Hotspot Users';
 			$this->load->view('template/header', $data);
@@ -142,7 +144,7 @@ class Hotspot extends CI_Controller
 
 		if ($API->connect($ip, $user, $password)) {
 
-			$getsecret = $API->comm('/ip/hotspot/user/print', array(
+			$getuser = $API->comm('/ip/hotspot/user/print', array(
 				"?.id" => '*' . $id,
 			));
 			$server = $API->comm('/ip/hotspot/print');
@@ -151,10 +153,13 @@ class Hotspot extends CI_Controller
 
 			$data = [
 				'menu' => 'Hotspot',
-				'secret' => $getsecret[0],
+				'user' => $getuser[0],
 				'server' => $server,
 				'profile' => $profile,
 			];
+
+
+			// var_dump($getuser);
 
 			$menu['menu'] = 'Hotspot';
 			$data['title'] = 'Edit Hotspot Users';

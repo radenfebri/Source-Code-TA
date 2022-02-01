@@ -203,6 +203,7 @@
 										<th>Uptime</th>
 										<th>Bytes In</th>
 										<th>Bytes Out</th>
+										<th>Status</th>
 										<th>Comment</th>
 										<th style="width: 10%">Action</th>
 									</tr>
@@ -216,6 +217,7 @@
 										<th>Uptime</th>
 										<th>Bytes In</th>
 										<th>Bytes Out</th>
+										<th>Status</th>
 										<th>Comment</th>
 										<th>Action</th>
 									</tr>
@@ -231,6 +233,15 @@
 											<td><?= $data['uptime']; ?></td>
 											<td><?= formatBytes($data['bytes-in'],); ?></td>
 											<td><?= formatBytes($data['bytes-out'],); ?></td>
+											<td>
+												<?php 
+													if ($data['disabled'] == "true" ) {
+														echo "Disable";
+													} else {
+														echo "Enable";
+													}
+												?>
+											</td>
 											<td><?= $data['comment']; ?></td>
 											<td>
 												<div class="form-button-action">
