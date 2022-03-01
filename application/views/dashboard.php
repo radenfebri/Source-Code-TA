@@ -183,6 +183,7 @@
 			</div>
 		</div>
 		<div class="row">
+			
 			<div class="col-sm-12 col-md-8">
 				<div class="card">
 					<div class="card-header">
@@ -197,6 +198,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="col-sm-8 col-md-4">
 				<div class="card card-stats">
 					<div class="form-group">

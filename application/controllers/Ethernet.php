@@ -48,8 +48,6 @@ class Ethernet extends CI_Controller
 
 		if ($API->connect($ip, $user, $password)) {
 
-			//$getinterface = $API->comm("/interface/print");
-			//$interface = $getinterface[$iface-1]['name'];
 			$getinterfacetraffic = $API->comm("/interface/monitor-traffic", array(
 				"interface" => $interface,
 				"once" => "",
@@ -66,7 +64,6 @@ class Ethernet extends CI_Controller
 			array_push($result, $rows);
 			array_push($result, $rows2);
 			print json_encode($result);
-			// $this->load->view('ethernet/traffic',);
 
 
 		} else {
