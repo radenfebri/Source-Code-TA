@@ -4,8 +4,8 @@
     $text = isset($_POST['text']) ? $_POST['text'] : "";
     // echo $text;
 
-    $sql = "INSERT INTO `data` (`text`)
-    VALUES ('TRAFFIC SEDANG NAIK, LEBIH DARI 100 Mbps');";
+    $sql = "INSERT INTO `reports` (`text`)
+    VALUES ('Traffic Internet Melebihi Dari 50 Mbps	');";
     echo $sql;
 
     $query = mysqli_query($conn, $sql);
