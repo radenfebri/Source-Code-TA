@@ -30,6 +30,7 @@
 											<td><b>Sampai tanggal</b></td>
 											<td><input type="date" name="sampai_tgl" value="{{ old('sampai_tgl') }}" required="required"></td>
 											<td><input type="submit" class="btn btn-primary btn-rounded" name="filter" value="Search"></td>
+											<td><a href="<?= base_url('/report/search')?>" class="btn btn-danger btn-rounded">Reset</a></td>
 										</form>
 									</tr>
 								</table> 

@@ -14,7 +14,7 @@ class Ethernet extends CI_Controller
 
 		if ($API->connect($ip, $user, $password)) {
 
-			$interface = $API->comm('/interface/print');
+			$interface = $API->comm('/interface/ethernet/print');
 
 			$data = [
 				'menu' => 'Ethernet',

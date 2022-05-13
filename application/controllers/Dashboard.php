@@ -21,7 +21,7 @@ class Dashboard extends CI_Controller {
 			$resource = $API->comm('/system/resource/print');
 			$secret = $API->comm('/ppp/secret/print');
 			$secretactive = $API->comm('/ppp/active/print');
-			$interface = $API->comm('/interface/print');
+			$interface = $API->comm('/interface/ethernet/print');
 			$routerboard = $API->comm('/system/routerboard/print');
 			$identity = $API->comm('/system/identity/print');
 
