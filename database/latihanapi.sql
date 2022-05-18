@@ -9,7 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone = "+07:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `latihanapi`
+-- Database: `tugasakhir`
 --
 
 -- --------------------------------------------------------
@@ -38,11 +38,6 @@ CREATE TABLE `data` (
 --
 
 INSERT INTO `data` (`id`, `text`, `time`) VALUES
-(1, 'TRAFFIC SEDANG NAIK, LEBIH DARI 100 Mbps', '2021-11-28 10:51:24'),
-(2, 'TRAFFIC SUDAH STABIL KEMBALI', '2021-11-28 10:51:29'),
-(3, 'TRAFFIC SEDANG NAIK, LEBIH DARI 100 Mbps', '2021-11-28 14:56:25'),
-(4, 'TRAFFIC SUDAH STABIL KEMBALI', '2021-11-28 14:56:35');
-
 --
 -- Indexes for dumped tables
 --
