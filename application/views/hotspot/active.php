@@ -38,8 +38,6 @@
 											<th>Uptime</th>
 											<th>Bytes In</th>
 											<th>Bytes Out</th>
-											<th>Comment</th>
-											<th style="width: 10%">Action</th>
 										</tr>
 									</thead>
 									<tfoot>
@@ -51,8 +49,6 @@
 											<th>Uptime</th>
 											<th>Bytes In</th>
 											<th>Bytes Out</th>
-											<th>Comment</th>
-											<th>Action</th>
 										</tr>
 									</tfoot>
 									<tbody>
@@ -60,25 +56,12 @@
 										<tr>
 											<?php $id = str_replace('*', '', $data['.id']) ?>
 											<td><?= $no+1; ?></td>
-											<td><?= $data['name']; ?></td>	
+											<td><?= $data['user']; ?></td>	
 											<td><?= $data['server']; ?></td>
 											<td><?= $data['login-by']; ?></td>
 											<td><?= $data['uptime']; ?></td>
 											<td><?= formatBytes($data['bytes-in'],); ?></td>
 											<td><?= formatBytes($data['bytes-out'],); ?></td>
-											<td><?= $data['comment']; ?></td>
-											<td>
-												<div class="form-button-action">
-													<button type="button" data-toggle="tooltip"
-													 class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
-														<i class="fa fa-edit"></i>
-													</button>
-													<a href="<?=base_url('hotspot/delUser/'. $id) ?>" type="button" data-toggle="tooltip"
-													 class="btn btn-link btn-danger" data-original-title="Remove" onclick="return confirm('Apakah anda yakin menghapus user <?= $data['name'];?> ?')">
-														<i class="fa fa-times"></i>
-													</a>
-												</div>
-											</td>
 										</tr>
 										<?php } ?>
 									</tbody>

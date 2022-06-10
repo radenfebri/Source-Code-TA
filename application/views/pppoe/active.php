@@ -25,10 +25,10 @@
 										<tr>
 											<th>No</th>
 											<th>Nama</th>
-											<th>Password</th>
+											<th>Caller Id</th>
 											<th>Service</th>
-											<th>Local-Address</th>
-											<th>Remote-Address</th>
+											<th>Address</th>
+											<th>Uptime</th>
 										</tr>
 									</thead>
 									<tfoot>
@@ -64,15 +64,4 @@
 	</div>
 
 
-	<!-- <script>
-		$(document).on('click', '#edit', function() {
-			$('#id').val($(this).data('id'))
-			$('#user').val($(this).data('name'))
-			$('#password').val($(this).data('password'))
-			$('#service').val($(this).data('service'))
-			$('#profile').val($(this).data('profile'))
-			$('#localaddress').val($(this).data('localaddress'))
-			$('#remoteaddress').val($(this).data('remoteaddress'))
-			$('#comment').val($(this).data('comment'))
-		})
-	</script> -->
+	
