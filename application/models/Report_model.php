@@ -16,9 +16,4 @@ class Report_model extends CI_Model {
 		return $this->db->order_by('id', 'desc')->limit(2)->get('data')->result_array();
 	}
 
-	// public function getSearch()
-	// {
-	// 	$query = $this->db->query("SELECT * FROM  data WHERE time");
-	// 	return $query->result();
-	// }
 }
